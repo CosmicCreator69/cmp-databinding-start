@@ -6,7 +6,15 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
-<app-server-element> **ngFor="let serverElement of let serverElements" [srvElement]="serverElement"></app-server-element>
-    </div>
+      <button class="btn btn-primary" (click)="onChangeFirst()">change first element</button>
+<app-server-element **ngFor="let serverElement of let serverElements" [srvElement]="serverElement"
+[name="serverElement.name"]>
+
+
+
+
+
+</app-server-element>
+</div>
   </div>
 </div>
